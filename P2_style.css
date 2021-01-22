@@ -1,0 +1,33 @@
+@font-face
+{
+    font-family: raleway;
+    src: url(Raleway/Raleway-Italic-VariableFont_wght.ttf);
+    src: url(Raleway/Raleway-VariableFont_wght.ttf);
+
+}
+body
+{
+    font-family: raleway;
+}
+header
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    
+}
+header p
+{
+    margin-right: 75px;
+    padding-top: 17px;
+}
+.premier
+{
+    color:  #0065FC;
+    border-top:2px #0065FC solid;
+    padding: 15px;
+}
+strong
+{
+    color: #0065FC;
+}
