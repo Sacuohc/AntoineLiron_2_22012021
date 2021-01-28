@@ -8,26 +8,118 @@
 body
 {
     font-family: raleway;
+    background-color: white;
 }
-header
+#bloc_page
+{
+    width: 90%;
+    margin: auto;
+}
+header:not(img)
 {
     display: flex;
     justify-content: flex-end;
-    margin-right: 100px;
-    
+}
+header img
+{
+    position: absolute;
+    top: 10%;
+    left: 5.6%;
 }
 header p
 {
     margin-right: 75px;
-    padding-top: 17px;
+    padding-top: 20px;
 }
 .premier
 {
     color:  #0065FC;
-    border-top:2px #0065FC solid;
-    padding: 15px;
+    border-top: 2px #0065FC solid;
+    padding: 17px;
 }
-strong
+header strong
 {
     color: #0065FC;
+}
+.search
+{
+    display: inline-flex;
+    border: 1px #F2F2F2 solid;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    justify-content: space-around;
+    padding: 0px 5px 0px 5px;
+    text-align: justify;
+}
+
+input
+{
+    width: 150px;
+    height: 20px;
+}
+.filters
+{
+    display: block;
+    padding-inline-start: 0px;
+}
+.exept
+{
+    border: none;
+    margin-left: 0px;
+}
+ul
+{
+    padding-inline-start: 0px;
+}
+li
+{
+    display: inline;
+    list-style-type: none;
+    border: 1px #F2F2F2 solid;
+    border-radius: 12px;
+    justify-content: center;
+    margin: 20px;
+    padding-inline-start: 0px;
+    padding: 2px 5px;
+    font-weight: bold;
+}
+.filters span
+{
+    color: #0065FC;
+    margin-right: 5px;
+    background-color: #DEEBFF;
+    border-radius: 15px;
+    padding: 5px;
+    vertical-align: middle;
+}
+#child
+{
+    padding: 5px 9px 5px 9px;
+}
+#heart
+{
+    padding: 5px 7px 5px 7px;
+}
+aside i
+{
+    color: #0065FC;
+    font-size: 12px;
+    border: 1px #F2F2F2 solid;
+    border-radius: 15px;
+    padding: 4px 8px;
+    margin-right: 4px;
+}
+.main
+{
+    display: inline-block;
+}
+#housing
+{
+    flex: 1;
+    display: flex;
+}
+#popularity
+{
+    display: flex;
+    flex: 2;
 }
