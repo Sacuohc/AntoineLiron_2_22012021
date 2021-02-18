@@ -1,16 +1,33 @@
 @font-face
 {
     font-family: raleway;
-    src: url(Raleway/Raleway-Italic-VariableFont_wght.ttf);
-    src: url(Raleway/Raleway-VariableFont_wght.ttf);
+    src: url(Raleway/Raleway-Regular.ttf);
 
+}
+
+@font-face
+{
+    font-family: raleway;
+    src: url(Raleway/Raleway-Bold.ttf);
+    font-weight: bold;
+
+}
+html
+{
+    margin: 0px;
+}
+p
+{
+    margin: 0px;
 }
 body
 {
+    margin: 0px;
     font-family: raleway;
     background-color: white;
+    box-sizing: border-box;
 }
-#bloc_page
+#bloc_page:not(footer)
 {
     width: 90%;
     margin: auto;
@@ -23,8 +40,8 @@ header:not(img)
 header img
 {
     position: absolute;
-    top: 10%;
-    left: 5.6%;
+    top: 3%;
+    left: 4.9%;
 }
 header p
 {
@@ -43,19 +60,47 @@ header strong
 }
 .search
 {
-    display: inline-flex;
-    border: 1px #F2F2F2 solid;
-    border-radius: 10px;
+    display: flex;
+}
+.fa-map-marker-alt
+{
+    color: black;
+    height: 40px;
+    width: 40px;
     background-color: #F2F2F2;
-    justify-content: space-around;
-    padding: 0px 5px 0px 5px;
-    text-align: justify;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input
 {
     width: 150px;
-    height: 20px;
+    height: 40px;
+    border: 1px #F2F2F2 solid;
+    box-sizing: border-box;
+    font-family: raleway;
+    font-weight: bold;
+    padding-left: 5px;
+    color: black;
+}
+input::placeholder
+{
+    color: black;
+}
+
+.search_button
+{
+    display: flex;
+    width: 120px;
+    height: 40px;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
 .filters
 {
@@ -73,53 +118,266 @@ ul
 }
 li
 {
+    margin-right: 30px;
+    box-sizing: border-box;
     display: inline;
     list-style-type: none;
     border: 1px #F2F2F2 solid;
-    border-radius: 12px;
+    padding: 5px 5px 5px 0;
+    text-align: center;
     justify-content: center;
-    margin: 20px;
-    padding-inline-start: 0px;
-    padding: 2px 5px;
+    border-radius: 15px;
     font-weight: bold;
 }
-.filters span
+li .fas
 {
+    display: inline-flex;
     color: #0065FC;
-    margin-right: 5px;
     background-color: #DEEBFF;
+    height: 30px;
+    width: 30px;
     border-radius: 15px;
-    padding: 5px;
-    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
 }
-#child
+
+.fa-info
 {
-    padding: 5px 9px 5px 9px;
-}
-#heart
-{
-    padding: 5px 7px 5px 7px;
-}
-aside i
-{
+    font-size: 10px;
+    display: inline-flex;
     color: #0065FC;
-    font-size: 12px;
-    border: 1px #F2F2F2 solid;
+    border: 2px solid #F2F2F2;
+    height: 20px;
+    width: 20px;
     border-radius: 15px;
-    padding: 4px 8px;
-    margin-right: 4px;
+    justify-content: center;
+    align-items: center;
 }
+.plus
+{
+    position: relative;
+    left: 8px;
+    top: 3px;
+}
+
 .main
 {
-    display: inline-block;
+
+    display: flex;
+ 
+    
+}
+.main section
+{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 2.3;
+    margin-right: 20px;
+}
+.main aside
+{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
 }
 #housing
+{ 
+    display: flex;
+    flex-wrap: wrap;
+}
+.housing1, .housing2
 {
-    flex: 1;
     display: flex;
 }
+#housing img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.housing1 > *
+{
+    background-color: white;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 4px 0px 4px rgba(0, 0, 0, 0.1);
+}
+.housing2 > *
+{
+    background-color: white;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 4px 0px 4px rgba(0, 0, 0, 0.1);
+}
+.text1
+{
+    margin: 5px 0 5px 10px;
+}
+.text1 p
+{
+    margin: 5px;
+}
+
+
 #popularity
 {
     display: flex;
+    flex-flow: row wrap;
+
+
+}
+.pop1 img
+{
+    width: 110px;
+    height: 110px;
+    border-radius: 20px 0 0 20px;
+    
+}
+.pop1
+{
+    display: flex;
+    flex-direction: column;
+}
+.pop1 > *
+{
+    padding: 3px;
+    border-radius: 20px;
+    margin-top: 30px;
+    background-color: white; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 4px 0px 4px rgba(0, 0, 0, 0.1);
+    
+}
+.pop1 div
+{
+    display: flex;
+}
+.text2
+{
+    
+    flex-direction: column;
+    margin-left: 10px;
+}
+.text2 p
+{
+    margin-top: 5px;
+}
+
+
+.fa-chart-line
+{
+    margin-left: 130px;
+    color: black;
+}
+span i
+{
+    color: #F2F2F2;
+}
+i
+{
+    color: #0065FC;
+}
+a:link
+{
+    text-decoration: none;
+    color: black;
+}
+a:visited
+{
+    text-decoration: none;
+    color: black;
+}
+#activities
+{
+  
+    display: flex;
+    justify-content: space-around;
+
+}
+.a1
+{
+
+    flex: 1;
+    margin-right: 20px;
+    position: relative;
+    
+
+}
+.a2
+{
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+.a21
+{
+    flex: 1;
+    margin-right: 20px;
+    position: relative;
+    
+}
+.a22
+{
+
     flex: 2;
+    margin-top: 20px;
+    position: relative;
+}
+.a23
+{
+    flex: 2;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.a24
+{
+    position: relative;
+}
+#activities img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 4px 0px 4px rgba(0, 0, 0, 0.1);
+
+}
+.text3
+{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white; 
+    border-radius: 0 0 15px 15px;
+    
+}
+.text3 strong
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+footer
+{
+    
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    background-color: #F2F2F2;
+    
+}
+footer div
+{
+    margin-right: 20%;
+}
+footer div p
+{
+    margin-top: 10px;
 }
