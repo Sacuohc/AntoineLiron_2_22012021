@@ -200,7 +200,7 @@ li .fas
 { 
     display: flex;
     flex-wrap: wrap;
-    height: 600px;
+    
     
 }
 #housing img
@@ -216,9 +216,10 @@ li .fas
     height: 60%;
     flex: 1;
 }
-#housing > *
+#housing a
 {
-    height: 37%;
+
+    height: 200px;
     flex: 25%;
     background-color: white;
     margin: 15px;
@@ -244,7 +245,7 @@ aside h2
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 600px;
+    
     justify-content: space-between;
 }
 #popularity img
@@ -311,7 +312,7 @@ a:visited
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    height: 400px;
+    height: 500px;
     justify-content: space-evenly;
 }
 
@@ -389,4 +390,38 @@ footer div
 footer div p
 {
     margin-top: 10px;
+}
+@media screen and (max-width: 1024px)
+{
+    section
+    {
+     
+        
+    }
+    .main section
+    {
+        
+        width: 100%;
+        height: fit-content;
+    }
+    .main
+    {
+        display: block;
+        
+    }
+    .bloc_page
+    {
+        width: 100%;
+    }
+    #housing
+    {
+        height: fit-content;
+        display: block;
+    }
+    #housing > *
+    {
+        flex: 100%;
+    }
+
+
 }
